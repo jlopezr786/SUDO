@@ -1,6 +1,6 @@
 ---
-sudoers_rewrite_default_sudoers_file: True
-sudoers_remove_unauthorized_included_files: False
+#sudoers_rewrite_default_sudoers_file: True
+#sudoers_remove_unauthorized_included_files: False
 sudoers_backup: True
 sudoers_backup_path: "sudoers-backups"
 sudoers_visudo_path: "/usr/sbin/visudo"
