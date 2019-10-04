@@ -81,7 +81,7 @@ class LocalNetworkInventory(object):
   def lookup_local_ips(self):
     """Lookup IPs of hosts connected to the local network"""
     nm = nmap.PortScanner()
-    nm.scan(hosts="10.51.24.0/24", arguments="-p 22 --open")
+    nm.scan(hosts="local_net.0/24", arguments="-p 22 --open")
     return nm.all_hosts()
 
 
