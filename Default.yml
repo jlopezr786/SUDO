@@ -1,4 +1,2 @@
-- name: "Apply a RHEL7.6 Default /etc/sudoers configuration"
-  hosts: "all"
-  roles:
-    - role: "ahuffman.sudoers"
+- name: "Scan Sudoers configuration"
+  scan_sudoers:
