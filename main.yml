@@ -2,7 +2,7 @@
 
 - name: Basic playbook test
   gather_facts: true
-  hosts: Segmento7
+  hosts: hosts
   tasks:
     - name: lanzando un ping
       ping:
