@@ -1,2 +1,0 @@
-- name: "Scan Sudoers configuration"
-  scan_sudoers:
