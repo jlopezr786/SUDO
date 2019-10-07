@@ -2,7 +2,7 @@
 
 - name: Basic playbook test
   gather_facts: true
-  hosts: hosts
+  hosts: Inventory
   tasks:
     - name: lanzando un ping
       ping:
