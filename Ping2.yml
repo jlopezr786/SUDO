@@ -1,7 +1,7 @@
 ---
-- name: Aplicando cambios para configuracion sudoers
-   copy:
-    src: "{{ /etc/ansible/role/default/main.yml }}"
+- name: Copy a new "sudoers" file into place, after passing validation with visudo
+  copy:
+    src: /templates/sudoers
     dest: /tmp/
-    owner: root
-    mode: 600
+    validate: /usr/sbin/visudo -cf %s
+
