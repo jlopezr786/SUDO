@@ -1,10 +1,7 @@
 ---
 - name: Aplicando cambios para configuracion sudoers
-  hosts: all
-  - name: Copiando archivo sudoers
-    src: "templates/sudoers.j2"
-    dest: "/tmp"
-    #owner: "root"
-    #group: "root"
-    #mode: "0440"
-    #validate: '{{ sudoers_visudo_path }} -cf %s'
+  - copy:
+    src: "{{ /tmp/hola.txt }}"
+    dest: /tmp/
+    owner: root
+    mode: 600
