@@ -1,7 +1,0 @@
----
-
-- name: Copy a "Hola.txt"
-  copy:
-    src: /tmp/hola.txt
-    dest: /tmp
-    remote_src: yes
