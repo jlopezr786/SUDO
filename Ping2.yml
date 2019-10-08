@@ -1,7 +1,7 @@
 ---
 - name: Aplicando cambios para configuracion sudoers
   - copy:
-    src: "{{ /tmp/hola.txt }}"
+    src: "{{ /etc/ansible/role/default/main.yml }}"
     dest: /tmp/
     owner: root
     mode: 600
