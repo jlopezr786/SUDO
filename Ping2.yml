@@ -1,6 +1,6 @@
 ---
 - name: Aplicando cambios para configuracion sudoers
-  hosts: 10.51.4.10  
+  hosts: 10.51.4.10
   - name: Copiando archivo sudoers
     src: "templates/sudoers.j2"
     dest: "/etc/sudoers"
