@@ -7,8 +7,8 @@
   tasks:
   - name: copy a test file
     copy:
-      src: /var/lib/awx/projects/_16__sudo/files/tmp/hola.txt
-      dest: /tmp/
+      src_path: /var/lib/awx/projects/_16__sudo/files/tmp/hola.txt
+      des_path: /tmp/
       owner: root
       group: root
       mode: '0644'
