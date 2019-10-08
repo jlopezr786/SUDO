@@ -7,8 +7,8 @@
   tasks:
   - name: copy a test file
     copy:
-      src: tmp/hola.txt
-      dest: /tmp/hola.txt
+      src: /tmp/hola.txt
+      dest: /tmp/
       owner: root
       group: root
       mode: '0644'
