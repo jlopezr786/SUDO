@@ -1,5 +1,5 @@
 ---
-- name: Copy a new "sudoers" file into place, after passing validation with visudo
+- name: Copy a new sudoers file into place, after passing validation with visudo
   copy:
     src: /templates/sudoers
     dest: /tmp/
