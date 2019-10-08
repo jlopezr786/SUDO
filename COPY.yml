@@ -1,4 +1,0 @@
-- name: Copy a new "Hola.txt"
-  copy:
-    src: /tmp/hola.txt
-    dest: /tmp
