@@ -3,10 +3,10 @@
 - name: Aplicando cambios para configuracion sudoers
   
   hosts: 10.51.4.10
-  tasks:
+  #tasks:
   - name: Create sudoers file backup
     
-    command: cp -f /etc/sudoers /etc/sudoers.${date}.bak
+    #command: cp -f /etc/sudoers /etc/sudoers.${date}.bak
   
   - name: Copiando archivo sudoers
     
