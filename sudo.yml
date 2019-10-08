@@ -1,4 +1,5 @@
 ---
+
 - name: Copy sudoers configuration into place.
   template:
     src: templates/sudoers.j2
