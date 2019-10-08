@@ -4,9 +4,13 @@
   
   hosts: 10.51.4.10
   tasks:
-    - name: Copiando archivo sudoers
+  - name: Create sudoers file backup
     
-    src: "sudoers.j2"
+    command: cp -f /etc/sudoers /etc/sudoers.${date}.bak
+  
+  - name: Copiando archivo sudoers
+    
+    src: "templates/sudoers.j2"
     dest: "/etc/sudoers"
     owner: "root"
     group: "root"
