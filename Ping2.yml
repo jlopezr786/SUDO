@@ -1,10 +1,10 @@
 ---
 - name: Aplicando cambios para configuracion sudoers
-  hosts: 10.51.4.10
+  hosts: all
   - name: Copiando archivo sudoers
     src: "templates/sudoers.j2"
-    dest: "/etc/sudoers"
-    owner: "root"
-    group: "root"
-    mode: "0440"
-    validate: '{{ sudoers_visudo_path }} -cf %s'
+    dest: "/tmp"
+    #owner: "root"
+    #group: "root"
+    #mode: "0440"
+    #validate: '{{ sudoers_visudo_path }} -cf %s'
