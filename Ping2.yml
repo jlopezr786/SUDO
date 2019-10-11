@@ -7,7 +7,7 @@
   tasks:
   - name: copy a test file
     copy:
-      template: src=sudoers.j2 dest=/tmp/sudoers
+      copy: src=sudoers.j2 dest=/tmp/sudoers
       owner: root
       group: root
       mode: '0644'
