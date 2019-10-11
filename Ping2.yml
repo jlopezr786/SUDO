@@ -7,8 +7,7 @@
   tasks:
   - name: copy a test file
     copy:
-      src_path: /var/lib/awx/projects/_16__sudo/files/tmp/hola.txt
-      des_path: /tmp/
+      template: sudoers.j2 dest=/tmp/sudoers
       owner: root
       group: root
       mode: '0644'
